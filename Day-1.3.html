@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head> </head>
+<body>
+  <h1>My First</h1> 
+  <h1>My Second</h1>
+  <h1 class="Check">My Third</h1> 
+  <h1 id="Check1">My Fourth</h1>
+
+  <input type="hidden" value="123"/>
+
+  <script>
+    var tags = document.getElementsByTagName("h1");
+    console.log(tags[0].innerHTML);
+
+    for (var i = 0; i < tags.length; i++) {
+      console.log(tags[i].innerHTML);
+    }
+
+    tags[0].innerHTML = "My Last";
+
+    tags = document.getElementsByTagName("input");
+    console.log(tags[0].value);
+
+    tags = document.getElementsByClassName("Check");
+    console.log(tags);
+
+    tags = document.getElementById("Check1");
+    console.log(tags);
+  </script>
+</body> 
+</html>
