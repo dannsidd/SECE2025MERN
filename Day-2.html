@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        div {   
+            width: 300px;
+            padding: 20px;
+            margin: 10px;
+            border: 2px solid green;
+            background-color: aqua;
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        input, button {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: green;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function handleSubmit(event) { 
+            event.preventDefault(); 
+            const email = document.getElementById('email').value; 
+            const password = document.getElementById('password').value; 
+            if (email && password) { 
+                window.location.href = 'Day-1.1.html'; 
+            } else { 
+                alert('Please enter both email and password.'); 
+            } 
+        }
+    </script>
+</head>
+<body>
+    
+    <div>
+        <h1>LOGIN FORM</h1>
+        <form method="POST" onsubmit="handleSubmit(event)">
+            <label>EMAIL</label>
+            <input type="email" placeholder="email" id="email" name ="email">
+            <label>PASSWORD</label>
+            <input type="password" placeholder="password" id="password" name="password">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

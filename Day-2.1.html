@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern Printing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="pattern" id="patternContainer"></div>
+
+    <script>
+        const rows = 5;
+        const container = document.getElementById('patternContainer');
+        let pattern = '';
+        for (let i = 1; i <= rows; i++) {
+            for (let j = 1; j <= i; j++) {
+                pattern += j + ' ';
+            }
+            pattern += '<br>';
+        }        
+        container.innerHTML = pattern;
+    </script>
+</body>
+</html>
