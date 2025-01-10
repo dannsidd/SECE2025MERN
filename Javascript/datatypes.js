@@ -38,6 +38,6 @@
 //console.log(obj2);
 
 //Set
-set = new Set();
+set = new Set("hello", 1,2);
 console.log(set);
 console.log(typeof(set));
