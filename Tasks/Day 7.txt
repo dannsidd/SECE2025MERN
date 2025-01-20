@@ -1,0 +1,8 @@
+9. Why is the default keyword used when exporting a component?
+The default keyword isn't strictly required, but it designates a default export, which allows the component to be imported without using curly braces. On the other hand, named exports need curly braces when importing.
+
+10. What is the purpose of StrictMode in main.jsx?
+StrictMode in React is designed to detect potential issues within an application by running extra checks and showing warnings for child components during development. It helps developers identify and fix unsafe lifecycle methods, outdated APIs, and unanticipated side effects, leading to more robust code.
+
+11. What is WhatsApp's estimated revenue?
+WhatsApp's financial figures are not publicly detailed (Meta doesn't provide a breakdown by company), but estimates suggest it generates around $1.3 billion annually as of late 2024. This is a small fraction of Meta's total revenue, and over the past decade, WhatsApp hasn't generated enough to offset its $19 billion acquisition cost in 2014.
