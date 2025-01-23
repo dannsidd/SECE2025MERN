@@ -1,4 +1,3 @@
-
 import {useState} from 'react';
 const Contact = () => {
   var [num,setNum] = useState(0);
